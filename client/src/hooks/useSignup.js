@@ -16,7 +16,7 @@ function useSignup() {
             return
         try{
             setLoading(true)
-            const res = await axios.post('http://localhost:8080/api/auth/signup',{
+            const res = await axios.post('https://healthsuggestionbackend.netlify.app/api/auth/signup',{
                 name,
                 username,
                 password,

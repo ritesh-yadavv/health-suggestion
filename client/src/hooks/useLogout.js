@@ -14,7 +14,7 @@ function useLogout() {
         if(!user)
             return
         try {
-            await axios.post('http://localhost:8080/api/auth/logout',{withCredentials:true})
+            await axios.post('https://healthsuggestionbackend.netlify.app/api/auth/logout',{withCredentials:true})
             localStorage.removeItem("Healthuser")
             setUser(null)
             navigate("/")

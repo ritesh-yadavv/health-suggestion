@@ -16,7 +16,7 @@ export const useLogin = ()=>{
         try{
             setLoading(true)
             // console.log(loading)
-            const res = await axios.post('http://localhost:8080/api/auth/login',{
+            const res = await axios.post('https://healthsuggestionbackend.netlify.app/api/auth/login',{
                 username,
                 password
             },{withCredentials:true})
